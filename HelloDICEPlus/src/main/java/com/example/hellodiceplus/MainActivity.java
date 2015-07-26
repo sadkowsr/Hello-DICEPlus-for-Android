@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
         TVResult = (TextView) findViewById(R.id.TVResult);
 
         // Initiating
-        BluetoothManipulator.initiate(this);
+        BluetoothManipulator.initiate(this.getApplicationContext());
         DiceController.initiate(developerKey);
 
         // Listen to all the state occurring during the discovering process of DICE+
